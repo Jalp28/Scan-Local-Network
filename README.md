@@ -32,7 +32,7 @@ This guide provides step-by-step instructions for scanning a local network using
 
 ### 2. Understand Basic Nmap Commands:
   - Below are common Nmap commands for network scanning:
-  - 
+    
  - Ping Scan: Discover live hosts.
    nmap -sn 192.168.1.0/24
  - Legacy Ping Scan: Alternative to -sn
@@ -55,15 +55,15 @@ This guide provides step-by-step instructions for scanning a local network using
      Command: nmap -sS 192.168.1.0/24
   
      Steps:
-           Open a terminal or command prompt.
-           Enter the above command, replacing 192.168.1.0/24 with your network’s subnet if different.
-           Run the command as an administrator/root (e.g., use sudo on Linux/macOS).
+           - Open a terminal or command prompt.
+           - Enter the above command, replacing 192.168.1.0/24 with your network’s subnet if different.
+           - Run the command as an administrator/root (e.g., use sudo on Linux/macOS).
 
      Alternatively, if using the Nmap GUI (Zenmap):
-           Launch Zenmap.
-           Enter the target subnet (e.g., 192.168.1.0/24) in the Target field.
-           Select the Scan Profile (e.g., "Intense scan" or "Quick scan") or manually enter the command nmap -sS 192.168.1.0/24 in the Command field.
-           Click Scan.
+           - Launch Zenmap.
+           - Enter the target subnet (e.g., 192.168.1.0/24) in the Target field.
+           - Select the Scan Profile (e.g., "Intense scan" or "Quick scan") or manually enter the command nmap -sS 192.168.1.0/24 in the Command field.
+           - Click Scan.
      
 ### 4. Analyze the Output
   After the scan completes, Nmap will display:
@@ -77,23 +77,6 @@ PORT     STATE  SERVICE
 22/tcp   open   ssh
 80/tcp   open   http
 443/tcp  open   https
-
-   **Steps**:
-   1. Open a terminal or command prompt.
-   2. Enter the above command, replacing `192.168.1.0/24` with your network’s subnet if different.
-   3. Run the command as an administrator/root (e.g., use `sudo` on Linux/macOS).
-
-   Alternatively, if using the **Nmap GUI (Zenmap)**:
-   1. Launch Zenmap.
-   2. Enter the target subnet (e.g., `192.168.1.0/24`) in the **Target** field.
-   3. Select the **Scan Profile** (e.g., "Intense scan" or "Quick scan") or manually enter the command `nmap -sS 192.168.1.0/24` in the **Command** field.
-   4. Click **Scan**.
-
-### 4. Analyze the Output
-   After the scan completes, Nmap will display:
-   - **Live Hosts**: IP addresses of devices responding on the network.
-   - **Open Ports**: Ports that are open on each live host, along with the associated service (e.g., HTTP on port 80).
-   - **State**: Whether ports are `open`, `closed`, or `filtered`.
 
    **Example Output**:
    ```
