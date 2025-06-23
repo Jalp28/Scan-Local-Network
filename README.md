@@ -84,7 +84,7 @@ This guide provides step-by-step instructions for scanning a local network using
 
 - **Understand Ports**: Check open ports (e.g., 22/SSH, 80/HTTP) and their services using Nmap’s `-sS` or `-sV` scans.
 - **Assess Necessity**: Ensure open ports are required (e.g., disable SMB on 445 if unused to avoid ransomware risks).
-- **Check Vulnerabilities**: Use `-sV` to identify service versions; search CVEs (e.g., https://cve.mitre.org) for known exploits.
+- **Check Vulnerabilities**: Use `-sV` to identify service versions; search CVEs (e.g., https://www.cve.org/) for known exploits.
 - **Verify Access**: Restrict ports to trusted IPs with firewalls (e.g., limit SSH to local network or VPN).
 - **Secure Configurations**: Avoid default credentials; use encryption (e.g., HTTPS, not HTTP); test with Nmap scripts (e.g., `nmap --script ftp-anon`).
 - **Mitigate Risks**: Close unnecessary ports, patch outdated services, and monitor network regularly.
