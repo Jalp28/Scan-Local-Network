@@ -71,13 +71,6 @@ This guide provides step-by-step instructions for scanning a local network using
    - Open Ports: Ports that are open on each live host, along with the associated service (e.g., HTTP on port 80).
    - State: Whether ports are open, closed, or filtered.
 
-Example Output:Nmap scan report for 192.168.1.100
-Host is up (0.0023s latency).
-PORT     STATE  SERVICE
-22/tcp   open   ssh
-80/tcp   open   http
-443/tcp  open   https
-
    **Example Output**:
    ```
    Nmap scan report for 192.168.1.100
