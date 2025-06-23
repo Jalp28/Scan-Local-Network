@@ -87,6 +87,16 @@ PORT     STATE  SERVICE
    80/tcp   open   http
    443/tcp  open   https
    ```
+## Identifying Security Risks from Open Ports
+
+- **Understand Ports**: Check open ports (e.g., 22/SSH, 80/HTTP) and their services using Nmap’s `-sS` or `-sV` scans.
+- **Assess Necessity**: Ensure open ports are required (e.g., disable SMB on 445 if unused to avoid ransomware risks).
+- **Check Vulnerabilities**: Use `-sV` to identify service versions; search CVEs (e.g., https://cve.mitre.org) for known exploits.
+- **Verify Access**: Restrict ports to trusted IPs with firewalls (e.g., limit SSH to local network or VPN).
+- **Secure Configurations**: Avoid default credentials; use encryption (e.g., HTTPS, not HTTP); test with Nmap scripts (e.g., `nmap --script ftp-anon`).
+- **Mitigate Risks**: Close unnecessary ports, patch outdated services, and monitor network regularly.
+- **Example**: Open port 22 (SSH) risks brute-force attacks; use key-based authentication and IP whitelisting.
+
 
    In this repository, sample scan results are provided in the `HTML File.html` directory as HTML files for reference.
 
