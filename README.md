@@ -55,15 +55,15 @@ This guide provides step-by-step instructions for scanning a local network using
      Command: nmap -sS 192.168.1.0/24
   
      Steps:
-           - Open a terminal or command prompt.
-           - Enter the above command, replacing 192.168.1.0/24 with your network’s subnet if different.
-           - Run the command as an administrator/root (e.g., use sudo on Linux/macOS).
+     - Open a terminal or command prompt.
+     - Enter the above command, replacing 192.168.1.0/24 with your network’s subnet if different.
+     - Run the command as an administrator/root (e.g., use sudo on Linux/macOS).
 
      Alternatively, if using the Nmap GUI (Zenmap):
-           - Launch Zenmap.
-           - Enter the target subnet (e.g., 192.168.1.0/24) in the Target field.
-           - Select the Scan Profile (e.g., "Intense scan" or "Quick scan") or manually enter the command nmap -sS 192.168.1.0/24 in the Command field.
-           - Click Scan.
+     - Launch Zenmap.
+     - Enter the target subnet (e.g., 192.168.1.0/24) in the Target field.
+     - Select the Scan Profile (e.g., "Intense scan" or "Quick scan") or manually enter the command nmap -sS 192.168.1.0/24 in    the Command field.
+     - Click Scan.
      
 ### 4. Analyze the Output
   After the scan completes, Nmap will display:
@@ -88,11 +88,11 @@ PORT     STATE  SERVICE
    443/tcp  open   https
    ```
 
-   In this repository, sample scan results are provided in the `results` directory as HTML files for reference.
+   In this repository, sample scan results are provided in the `HTML File.html` directory as HTML files for reference.
 
 ## Repository Contents
 - `README.md`: This guide.
-- `results/`: Sample Nmap scan output files in HTML format.
+- `HTML File.html/`: Sample Nmap scan output files in HTML format.
 
 ## Troubleshooting
 - **Permission Denied**: Ensure you run Nmap with administrative/root privileges (`sudo` on Linux/macOS).
